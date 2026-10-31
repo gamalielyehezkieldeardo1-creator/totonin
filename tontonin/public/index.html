@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tontonin</title>
+<meta name="theme-color" content="#0f0f10">
+<meta name="description" content="Tonton video, Shorts, Live, Podcast, dan playlist.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tontonin">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ef4444'/%3E%3Cpolygon points='12,9 12,23 24,16' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <button class="icon" id="menu" aria-label="Menu">☰</button>
+  <a class="logo" href="#/"><span class="logomark">▶</span> Tontonin</a>
+  <form class="search" id="searchForm"><input id="searchInput" placeholder="Telusuri" autocomplete="off"><button aria-label="Cari">🔍</button></form>
+  <div class="topright">
+    <button class="btn" id="install" hidden>⬇ Pasang aplikasi</button>
+    <a class="btn" href="#/upload">＋ Unggah</a>
+    <a class="btn red" href="#/golive">● Live</a>
+    <button class="avatar" id="me" title="Atur nama channel">?</button>
+  </div>
+</header>
+<nav class="side" id="side">
+  <a href="#/" data-nav="home">🏠 <span>Beranda</span></a>
+  <a href="#/shorts" data-nav="shorts">⚡ <span>Shorts</span></a>
+  <a href="#/live" data-nav="live">📡 <span>Live</span></a>
+  <a href="#/podcast" data-nav="podcast">🎙️ <span>Podcast</span></a>
+  <a href="#/playlists" data-nav="playlists">📑 <span>Playlist</span></a>
+  <a href="#/offline" data-nav="offline">⬇️ <span>Tersimpan offline</span></a>
+  <hr>
+  <a href="#/mine" data-nav="mine">🎬 <span>Video Saya</span></a>
+  <a href="#/ads" data-nav="ads">📢 <span>Studio Iklan</span></a>
+  <a href="#/upload" data-nav="upload">⬆️ <span>Unggah</span></a>
+</nav>
+<main id="main"></main>
+<div id="offbar" hidden>📴 Kamu sedang offline — hanya video yang tersimpan offline yang bisa diputar</div>
+<div id="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>
